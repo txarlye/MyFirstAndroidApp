@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication_01"
         tools:targetApi="31">
         <activity
+            android:name=".FirstApp.EjercicioLAyout03ScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".FirstApp.EjercicioLayout02ScreenActivity"
             android:exported="false" />
         <activity
