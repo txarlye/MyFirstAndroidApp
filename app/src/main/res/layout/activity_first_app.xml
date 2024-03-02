@@ -7,27 +7,74 @@
     tools:context=".FirstApp.FirstAppActivity">
 
     <View
-        android:id="@+id/viewPurple"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:background="@color/purple_200"
-        android:textSize ="30sp"
-        android:textColor ="@color/teal_200"
-        app:layout_constraintBottom_toTopOf="@+id/viewBlue"
-        app:layout_constraintStart_toStartOf="@+id/viewBlue"
-        android:textAlignment="center"
-        android:text ="hello world" />
-
-    <View
-        android:id="@+id/viewBlue"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:background="@color/black"
+        android:id="@+id/screenLogo"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="#C5E1A5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextUser"
+        android:hint="Esribe tu usuario"
+        android:layout_width="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".25"
+        app:layout_constraintTop_toBottomOf="@id/screenLogo"  />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Esribe tu contraseña"
+        android:layout_marginStart="16dp"
+        app:layout_constraintVertical_bias=".1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser"
         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClickStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="login"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
