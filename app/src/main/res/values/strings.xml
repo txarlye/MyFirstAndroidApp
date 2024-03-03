@@ -3,5 +3,7 @@
     <string name="male">Gatito</string>
     <string name="female">Gatita</string>
     <string name="height">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="Age">Edad</string>
 
 </resources>
