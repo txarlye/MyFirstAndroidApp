@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="35sp"
-        tools:text="ejemplo" />
+        tools:text="ejemplo - texto que no se ve" />
 
 </FrameLayout>

@@ -10,6 +10,8 @@ class ResultMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result_main)
         val tvResult = findViewById<TextView>(R.id.textViewResult)
-
+        val name: String = intent.extras?.getString("extraNAme").orEmpty()
+        tvResult.text = "Hola $name"
+        tvResult.t
     }
 }

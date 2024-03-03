@@ -1,5 +1,6 @@
 package com.example.myapplication_01.FirstApp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,8 +18,15 @@ class FirstAppActivity : AppCompatActivity() {
         val etName = findViewById<AppCompatEditText>(R.id.editTextUser)
 
 
-        btnStart.setOnClickListener{
-            Log.i("CursoAristidevs", "Button pulsado ${etName.text.toString()}")
+        btnStart.setOnClickListener {
+
+            val nam = etName.text.toString()
+            if (nam.isNotEmpty()) {
+                Log.i("CursoAristidevs", "Button pulsado ${etName.text.toString()}")
+                val intent = Intent(this, ResultMainActivity::class.java)
+                intent.putExtra("extraNAme", nam)
+                startActivity(intent)
+            }
         }
 
 
