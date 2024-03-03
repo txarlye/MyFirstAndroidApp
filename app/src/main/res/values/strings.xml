@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application_01</string>
+    <string name="male">Gatito</string>
+    <string name="female">Gatita</string>
+    <string name="height">Altura</string>
+
 </resources>
